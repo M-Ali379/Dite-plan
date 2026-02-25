@@ -58,10 +58,13 @@ const ChatBot = ({ currentDietPlan }) => {
                             </div>
                         ))}
                         {isLoading && (
-                            <div className="bg-white border border-gray-100 text-gray-500 self-start rounded-2xl rounded-tl-sm p-3 text-sm flex items-center gap-1">
-                                <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
-                                <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-                                <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+                            <div className="bg-white border border-gray-100 text-gray-500 self-start rounded-2xl rounded-tl-sm p-3 text-sm flex items-center gap-1.5 font-medium">
+                                <span>Thinking...</span>
+                                <div className="flex gap-1">
+                                    <div className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce"></div>
+                                    <div className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                                    <div className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+                                </div>
                             </div>
                         )}
                     </div>
